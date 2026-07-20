@@ -1,0 +1,23 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.boosted.ai/api
+docs: https://www.boosted.ai/api
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+schemes:
+- name: apiKey
+  type: apiKey
+  in: header
+  parameter_name: x-api-key
+  description: >-
+    Boosted.ai (Alfa) API requests authenticate with an API key passed in the
+    x-api-key request header, as shown in the provider's published Python
+    example (headers = {"x-api-key": API_KEY}). Keys are issued per client.
+  sources: [https://www.boosted.ai/api]
+notes: >-
+  No public OpenAPI/Swagger specification is published for the Boosted.ai API;
+  the auth model is captured from the provider's documented API code sample.
+  The application host (alfa-3.boosted.ai) additionally fronts an OIDC/OAuth
+  login surface for the web app, but the developer API itself is API-key based.
