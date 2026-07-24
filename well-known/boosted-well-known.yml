@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: probed
+source: live probe of Boosted.ai hosts
+hosts:
+- host: https://www.boosted.ai
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+- host: https://boosted.ai
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+- host: https://alfa-3.boosted.ai
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    real: false
+    note: Returns the SPA index.html shell (Alfa app), not a valid OIDC discovery document.
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    real: false
+    note: Returns the SPA index.html shell (Alfa app), not a valid RFC 8414 metadata document.
+notes: >-
+  No genuine /.well-known discovery document was found. The two 200 responses on
+  the Alfa app host are the single-page-app catch-all HTML, not real discovery
+  metadata, so no WellKnown catalog pointer is wired. Recorded for audit only.

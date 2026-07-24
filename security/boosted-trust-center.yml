@@ -1,0 +1,21 @@
+generated: '2026-07-18'
+method: searched
+probe: false
+url: https://trust.boosted.ai/
+source: https://www.boosted.ai/security
+certifications:
+- SOC 2 Type I
+- SOC 2 Type II
+- ISO 27001:2022
+- ISO 27701
+- GDPR
+evidence:
+- source: https://www.boosted.ai/security
+  quote: >-
+    We have achieved SOC 2 Type I and Type II certification, are GDPR compliant,
+    and hold ISO 27001:2022 and ISO 27701 certifications.
+- source: https://trust.boosted.ai/
+  kind: trust-center
+notes: >-
+  Certifications captured verbatim from the Boosted.ai security page; a dedicated
+  Trust Center is published at trust.boosted.ai (JS-rendered app).

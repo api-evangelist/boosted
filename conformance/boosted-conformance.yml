@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.boosted.ai/security
+standards:
+- id: soc2-type1
+  conforms: true
+  evidence: "Boosted.ai security page: achieved SOC 2 Type I certification."
+- id: soc2-type2
+  conforms: true
+  evidence: "Boosted.ai security page: achieved SOC 2 Type II certification."
+- id: iso-27001-2022
+  conforms: true
+  evidence: "Boosted.ai security page: holds ISO 27001:2022 certification."
+- id: iso-27701
+  conforms: true
+  evidence: "Boosted.ai security page: holds ISO 27701 certification."
+- id: gdpr
+  conforms: true
+  evidence: "Boosted.ai security page: GDPR compliant."
+- id: oauth2
+  conforms: false
+  evidence: developer API uses API-key (x-api-key header) auth; no oauth2 on the API surface.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: no public error reference published.
+notes: >-
+  Compliance program conforms drawn from the provider's published security page
+  and trust center (trust.boosted.ai). Protocol/standard conformance is limited
+  because no public OpenAPI specification is available.

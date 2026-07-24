@@ -1,0 +1,37 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.boosted.ai/api
+api: Boosted.ai API (Alfa)
+base_url: https://alfa.boosted.ai/client
+authentication:
+  style: api-key
+  location: header
+  header: x-api-key
+  ref: authentication/boosted-authentication.yml
+request:
+  content_type: application/json
+  transport: https
+operations_documented:
+- method: POST
+  path: /v2/workplans/{workplan_id}/run-workplan
+  summary: Execute a workplan to generate a new research report.
+idempotency:
+  supported: unknown
+  evidence: none
+  note: No idempotency-key header or retry-safety contract is documented on the
+    public API page.
+pagination:
+  style: unknown
+  note: Not documented on the public API page.
+versioning:
+  scheme: uri-path
+  current: v2
+  evidence: documented endpoint path is prefixed /v2/
+error_envelope:
+  shape: unknown
+  note: No public error reference is published.
+notes: >-
+  Cross-cutting conventions captured from the provider's single published API
+  code sample. Only auth and URL-path versioning are documented publicly;
+  idempotency, pagination, and error-envelope shape are not published and are
+  left as unknown rather than fabricated.
