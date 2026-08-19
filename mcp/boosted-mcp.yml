@@ -6,16 +6,23 @@ server:
   name: boosted
   transport: http
   base_url: https://alfa.boosted.ai/client
-  auth: {type: apiKey, in: header, header: x-api-key}
+  auth:
+    type: apiKey
+    in: header
+    header: x-api-key
 tools:
 - name: run_workplan
   description: Execute a Boosted.ai workplan to generate a new research report.
   method: POST
   path: /v2/workplans/{workplan_id}/run-workplan
   source_operation: https://www.boosted.ai/api#run-workplan
-notes: >-
-  Candidate MCP mapping derived from the single operation Boosted.ai documents on
-  its public API page. No official/hosted Boosted.ai MCP server was found. The
-  provider markets a broader Investing Assistant / Insights Feed / agent-creation
-  surface via API, SDK, and embedded UI, but only run-workplan is publicly
+notes: Candidate MCP mapping derived from the single operation Boosted.ai documents on its public API
+  page. No official/hosted Boosted.ai MCP server was found. The provider markets a broader Investing Assistant
+  / Insights Feed / agent-creation surface via API, SDK, and embedded UI, but only run-workplan is publicly
   documented; additional tools are not enumerated here to avoid fabrication.
+deployment:
+  mode: none
+  verified: derived
+  tools: 1
+  checked: '2026-08-12'
+  source: catalog MCP census
