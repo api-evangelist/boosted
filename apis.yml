@@ -11,6 +11,17 @@ description: >-
   agent-generated research, and custom compliant agents inside their own products.
   The company reports serving 300+ global clients managing $5T+ in assets and is
   headquartered in New York, with offices in Toronto and San Francisco.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
