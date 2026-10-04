@@ -51,9 +51,9 @@ tags:
 - Artificial Intelligence
 - Finance
 - Investment Management
-- Financial-Services
+- Financial Services
 - Agents
-- Machine-Learning
+- Machine Learning
 - Research
 - Fintech
 tags_raw:
@@ -66,6 +66,8 @@ tags_raw:
 - Machine Learning
 - Research
 - Fintech
+- Financial-Services
+- Machine-Learning
 apis:
 - name: Boosted.ai API (Alfa)
   description: >-
